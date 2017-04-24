@@ -14,10 +14,9 @@ import { HeaderComponent } from './header/header.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { AdministrationComponent } from './administration/administration.component';
 import { MyMissingTranslationHandler } from './missingtemplate.component'
-
-/*export function HttpLoaderFactory(http: Http) {
-    return new TranslateHttpLoader(http);
-}*/
+import { UsernameComponent } from './username/username.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { LangboxComponent } from './langbox/langbox.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,10 @@ import { MyMissingTranslationHandler } from './missingtemplate.component'
     FooterComponent,
     HeaderComponent,
     ConfigurationComponent,
-    AdministrationComponent
-    
+    AdministrationComponent,
+    UsernameComponent,
+    DropdownComponent,
+    LangboxComponent
   ],
   imports: [
     BrowserModule,
@@ -44,3 +45,4 @@ import { MyMissingTranslationHandler } from './missingtemplate.component'
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

@@ -17,26 +17,16 @@
                 <li>
                     <a routerLink="administration">Administration</a>
                 </li>
-
+                <li>
+                    <app-username></app-username>
+                </li>
+                <li>
+                    <app-dropdown></app-dropdown>
+                </li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chose Language {{ 'Sel_lang' | translate }}<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li>
-                            <a (click)="changeLanguage('en')">English {{ 'Languages.English' | translate }}</a>
-                        </li>
-                        <li>
-                            <a (click)="changeLanguage('fr')">French {{ 'Languages.French' | translate }}</a>
-                        </li>
-                        <li>
-                            <a (click)="changeLanguage('cn')">Chinese {{ 'Languages.Chinese' | translate }}</a>
-                        </li>
-                        <li>
-                            <a (click)="changeLanguage('hi')">Hindi {{ 'Languages.Hindi' | translate }}</a>
-                        </li>
-                    </ul>
+                    <app-langbox></app-langbox>
                 </li>
             </ul>
-
         </div>
     </div>
 </div>
